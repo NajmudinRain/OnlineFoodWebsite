@@ -1,0 +1,244 @@
+ /* CSS reset  */
+ *{
+     margin: 0px;
+     padding: 0px;
+ }
+ html{
+     scroll-behavior: smooth;
+ }
+ 
+ /* CSS variable  */
+ :root{
+    --navbar-height:59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;    
+
+}
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left:0px;
+    z-index: -1;
+    opacity: 0.9;
+    
+}
+/* Navigation bar: logo and images  */
+#logo{
+    margin: 4px 8px;
+}
+
+#logo img{
+    height: 60px;
+    width: 64px;
+    margin: 0px 1px;
+}
+
+ /* Navigation bar: List Styling  */
+ #navbar ul{
+     display: flex;   
+     font-family: 'Baloo Bhai 2', cursive;
+ }
+ 
+ #navbar ul li{
+
+     list-style: none;
+     font-size: 1.3rem;
+    
+ }
+
+ #navbar ul li a{
+    color: white;
+
+    display: block; 
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+ #navbar ul li a:hover{
+    color: black;
+    background-color: white;
+
+ }
+
+ /* Home section  */
+ #home{
+     display: flex;
+     flex-direction: column;
+     padding: 3px 200px;
+     height: 600px;
+    justify-content: center;
+    align-items: center;
+ }
+ #home::before{
+    content: " ";
+    position: absolute;
+    background: url('../home-pic.jpg')no-repeat center/cover ;
+    height: 692px;
+    width: 100%;
+    top: 0px;
+    left:0px;
+    z-index: -1;
+    opacity: 0.69;
+}
+
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    
+}
+#home p{
+    color:black;
+    text-align: center;
+    font: size 1.5rem; ;
+    font-family: 'Bree Serif', serif;
+}
+/* Services section  */
+#services-container{
+    /* border: 2px solid red; */
+   
+}
+#services{
+    /* border: 2px solid red; */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#services .box {
+    border: 2px solid red;
+    margin: 25px 15px;
+    padding: 3px 31px;
+    border-radius: 28px;
+    background-color: rgb(238, 224, 224);
+    
+}
+#services.box p{
+    font-family: 'Bree Serif', serif;
+
+}
+    #services .box img {
+        height: 180px;
+        width: 190px;
+        display: block;
+        margin: auto;
+    }
+    /* Clients Section  */
+#client-section{
+    /* border: 2px solid red;s */
+    height: 344px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../home3.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 45%;
+    z-index:-1;
+    opacity: 0.2;
+}
+#clients{
+/* border: 2px solid red; */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.client-item{
+    /* border: 2px solid red; */
+    padding: 40px;
+    margin: 10px;
+    
+
+}
+.client-item img{
+height: 160px;
+width: 100%;
+}
+/* contact Section  */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+z-index: -1;
+/* opacity: 0.9; */
+background: url(../img/pic8.png);
+
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 12px;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+font-size: 1.3rem;
+font-family: 'Bree Serif', serif;
+
+}
+footer{
+    display: flex;
+    background: black;
+    color: white;
+    padding:9px 20px ;
+    justify-content: center;
+    text-align: center;
+    height: 20px;
+    margin: 0px 0px;
+    padding: 35px 0px;
+}
+
+/* utility classes  */
+.h-primary{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Bree Serif', serif;
+    
+}
+.h-secondary{
+    text-align: center;
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+
+    padding: 6px 20px;
+    border: 2px solid white;
+    background: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+.center{
+    text-align: center;
+
+}
+
